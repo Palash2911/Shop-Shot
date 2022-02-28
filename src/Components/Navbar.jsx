@@ -24,11 +24,17 @@ const Navbar = () => {
             </button>
             <div className="collapse navbar-collapse" id="navbarSupportedContent">
             <ul className="navbar-nav me-auto mb-2 mb-lg-0">
-                <li className="nav-item">
+                <li className="nav-item mx-3">
                     <Link className={`nav-link ${location.pathname==="/"? "active":""}`} aria-current="page" to="/">Home</Link>
                 </li>
-                <li className="nav-item">
-                <Link className={`nav-link ${location.pathname==="/allnotes"? "active":""}`} to="/allnotes">All Categories</Link>
+                <li className="nav-item dropdown">
+                    <Link className={`nav-link dropdown-toggle ${location.pathname==="/AllCat"? "active":""}`} to="/AllCat" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">Select Category</Link>
+                    <ul className="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <li><Link className="dropdown-item" to="/Electronics">Electronics</Link></li>
+                        <li><Link className="dropdown-item" to="/Mens">Mens Clothing</Link></li>
+                        <li><Link className="dropdown-item" to="/Women">Women's Wear</Link></li>
+                        <li><Link className="dropdown-item" to="/Books">Books</Link></li>
+                    </ul>
                 </li>
             </ul>
             {!localStorage.getItem('token')?<form className="d-flex">
