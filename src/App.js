@@ -16,6 +16,7 @@ function App() {
     <>
       <Router>
         <Navbar/>
+        
         <LoadingBar
             height={2}
             color='#adb5bd'
