@@ -15,6 +15,21 @@ const Navbar = () => {
       props.showAlert("Logout Successfully", "success")
   }
 
+  const setname = ()=>{
+        if(location.pathname==="/" || location.pathname==="/Cart" || location.pathname==="/login" || location.pathname==="/signup")
+        {
+            return "All Categories"
+        }
+        else if(location.pathname==="/Mens")
+        {
+            return "Mens Clothing"
+        }
+        else if(location.pathname==="/Women")
+        {
+            return "Women's Wear"
+        }
+        return location.pathname.toString().substring(1);
+  }
   return (
     <nav className="navbar navbar-expand-lg navbar-dark bg-dark">
         <div className="container-fluid">
@@ -28,7 +43,7 @@ const Navbar = () => {
                     <Link className={`nav-link ${location.pathname==="/"? "active":""}`} aria-current="page" to="/">Home</Link>
                 </li>
                 <li className="nav-item dropdown mx-2">
-                    <a className={`nav-link dropdown-toggle`} id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">Select Category</a>
+                    <a className={`nav-link dropdown-toggle`} id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">{setname()}</a>
                     <ul className="dropdown-menu" aria-labelledby="navbarDropdown">
                         <li><Link className="dropdown-item" to="/Electronics">Electronics</Link></li>
                         <li><Link className="dropdown-item" to="/Mens">Mens Clothing</Link></li>
