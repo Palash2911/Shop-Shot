@@ -1,8 +1,8 @@
 .container{
-    margin-top: 5rem;
     display: flex;
     flex-direction: column;
-
     align-items: flex-start;
+    margin-top: 9rem;
+    margin-bottom: 13rem;
     /* background-color: aqua; */
 }
