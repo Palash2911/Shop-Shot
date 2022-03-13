@@ -1,3 +1,8 @@
 .men_card{
-    width: 50%;
+    margin: 0px 30px;
+}
+.mens_body{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
 }
