@@ -1,5 +1,6 @@
 .elec_card{
     margin: 0px 30px;
+    width: 300px;
 }
 .elec_body{
     display: flex;
@@ -11,7 +12,7 @@
     height: 50%;
     margin-bottom: 20px;
 }
-@media(max-width: 500px)
+@media(max-width: 700px)
 {
     .elec_body{
         flex-wrap: wrap;

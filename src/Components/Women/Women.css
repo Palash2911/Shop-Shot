@@ -1,12 +1,13 @@
 .women_card{
     margin: 0px 30px;
+    width: 300px;
 }
 .women_body{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
 }
-@media(max-width: 500px)
+@media(max-width: 700px)
 {
     .women_body{
         flex-wrap: wrap;

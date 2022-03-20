@@ -41,3 +41,12 @@ i:hover{
     cursor: pointer;
     font-size: 25px;
 }
+.card{
+  transition: 0.35s ease-in;
+}
+.card:hover{
+  transform: rotateZ(1.5deg) translate(10px, 5px);
+  box-shadow: #006466 0px 20px 30px -10px;
+  border-radius: 25px;
+  cursor: pointer;
+}
