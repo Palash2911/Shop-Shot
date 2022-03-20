@@ -4,7 +4,7 @@ import Navbar from './Components/Navbar';
 import Home from './Components/Homefiles/Home'
 import Login from './Components/Login'
 import Signup from './Components/Signup'
-import Cart from './Components/Cart'
+import Cart from './Components/Cart/Carts'
 import LoadingBar from 'react-top-loading-bar'
 import { useState } from 'react';
 import Mens from './Components/Mens/Mens';

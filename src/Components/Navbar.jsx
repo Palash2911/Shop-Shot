@@ -44,7 +44,7 @@ const Navbar = () => {
                 </li>
                 <li className="nav-item dropdown mx-2">
                     <a className={`nav-link dropdown-toggle`} id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">{setname()}</a>
-                    <ul className="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <ul className="dropdown-menu bg-dark" aria-labelledby="navbarDropdown">
                         <li><Link className="dropdown-item" to="/Electronics">Electronics</Link></li>
                         <li><Link className="dropdown-item" to="/Mens">Mens Clothing</Link></li>
                         <li><Link className="dropdown-item" to="/Women">Women's Wear</Link></li>

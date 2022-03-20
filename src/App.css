@@ -50,3 +50,6 @@ i:hover{
   border-radius: 25px;
   cursor: pointer;
 }
+.dropdown-item{
+    color: rgb(216, 213, 213);
+}
