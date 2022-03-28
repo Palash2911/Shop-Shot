@@ -12,3 +12,19 @@
     justify-content:flex-end;
     align-items: flex-end;
 }
+@media(max-width: 1650px)
+{
+    .book_container, .men_container, .women_container, .elec_container{
+        width: 82vw;
+    }
+}
+@media(max-width: 1400px){
+    .book_container, .men_container, .women_container, .elec_container{
+        width: 88vw;
+    }
+}
+@media(max-width: 1150px){
+    .book_container, .men_container, .women_container, .elec_container{
+        width: 95vw;
+    }
+}

@@ -9,14 +9,8 @@ const Navbar = () => {
     console.log(location);
   }, [location]);
 
-  const logoutbtn = ()=>{
-      localStorage.removeItem('token');
-      histo("/login")
-      props.showAlert("Logout Successfully", "success")
-  }
-
   const setname = ()=>{
-        if(location.pathname==="/" || location.pathname==="/Cart" || location.pathname==="/login" || location.pathname==="/signup")
+        if(location.pathname==="/" || location.pathname==="/Cart" || location.pathname==="/Items")
         {
             return "All Categories"
         }
@@ -55,12 +49,10 @@ const Navbar = () => {
                     <Link className={`nav-link ${location.pathname==="/Cart"? "active":""}`} aria-current="page" to="/Cart">Cart</Link>
                 </li>
             </ul>
-            {!localStorage.getItem('token')?<form className="d-flex">
-                <Link className="btn btn-primary mx-2" to="/login" role="button">Login</Link>
-                <Link className="btn btn-primary mx-1" to="/signup" role="button">Sign-Up</Link>
-            </form>: <form className="d-flex">
-                <button className="btn btn-primary mx-2" onClick={logoutbtn}>Log Out</button>
-            </form>}
+                <form class="d-flex">
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search" />
+                    <button class="btn btn-outline-primary" type="submit">Search</button>
+                </form>
             </div>
         </div>
     </nav>

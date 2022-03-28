@@ -2,8 +2,6 @@ import './App.css';
 import { BrowserRouter as Router, Routes, Route} from "react-router-dom";
 import Navbar from './Components/Navbar';
 import Home from './Components/Homefiles/Home'
-import Login from './Components/Login'
-import Signup from './Components/Signup'
 import Cart from './Components/Cart/Carts'
 import LoadingBar from 'react-top-loading-bar'
 import { useState } from 'react';
@@ -11,11 +9,11 @@ import Mens from './Components/Mens/Mens';
 import Women from './Components/Women/Women';
 import Electronics from './Components/Electronic/Electronics';
 import Books from './Components/Books/Books';
+import Item from './Components/Item Page/Item';
 
 function App() {
 
   const [progress, setProgress] = useState(0)
-
   return (
     <>
       <Router>
@@ -34,8 +32,7 @@ function App() {
             <Route exact path="/Women" element={<Women/>}></Route>
             <Route exact path="/Electronics" element={<Electronics/>}></Route>
             <Route exact path="/Books" element={<Books/>}></Route>
-            <Route exact path="/login" element={<Login/>}></Route>
-            <Route exact path="/signup" element={<Signup/>}></Route>
+            <Route exact path="/Item" element={<Item/>}></Route>
           </Routes>
         </div>
       </Router>

@@ -1,6 +1,8 @@
 import React from 'react'
+import '../Item Page/Item.css'
 
-const Signup = () => {
+
+const Item = () => {
   return (
     <div>
       
@@ -8,4 +10,4 @@ const Signup = () => {
   )
 }
 
-export default Signup
+export default Item

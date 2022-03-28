@@ -49,6 +49,7 @@ i:hover{
   box-shadow: #006466 0px 20px 30px -10px;
   border-radius: 25px;
   cursor: pointer;
+  color: black;
 }
 .dropdown-item{
     color: rgb(216, 213, 213);
