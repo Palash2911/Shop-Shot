@@ -49,9 +49,9 @@ const Navbar = () => {
                     <Link className={`nav-link ${location.pathname==="/Cart"? "active":""}`} aria-current="page" to="/Cart">Cart</Link>
                 </li>
             </ul>
-                <form class="d-flex">
-                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search" />
-                    <button class="btn btn-outline-primary" type="submit">Search</button>
+                <form className="d-flex">
+                    <input className="form-control me-2" type="search" placeholder="Search" aria-label="Search" />
+                    <button className="btn btn-outline-primary" type="submit">Search</button>
                 </form>
             </div>
         </div>
